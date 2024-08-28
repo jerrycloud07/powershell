@@ -7,8 +7,9 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  vmImage: 'ubuntu-latest'
 
+steps: # Add the steps section
 - task: AzurePowerShell@5
   inputs:
     azureSubscription: 'Free Trial(4e8b4bd0-7eee-426c-afeb-50d1ceb34677)'
