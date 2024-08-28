@@ -1,7 +1,7 @@
-$resourceGroup="app-grp"
+$resourceGroup="newapp-grp"
 $location="North Europe"
-$appServiceName="demoplan55534"
-$webAppName="webapp55434434"
+$appServiceName="plan798766565"
+$webAppName="webapp57676657687"
 
 New-AzAppServicePlan -ResourceGroupName $resourceGroup -Location $location `
 -Name $appServiceName -Tier "F1"
