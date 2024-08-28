@@ -1,0 +1,17 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+- task: AzurePowerShell@5
+  inputs:
+    azureSubscription: 'Free Trial(4e8b4bd0-7eee-426c-afeb-50d1ceb34677)'
+    ScriptType: 'FilePath'
+    ScriptPath: 'scripts/script15.ps1'
+    azurePowerShellVersion: 'LatestVersion'
